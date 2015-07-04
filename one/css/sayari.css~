@@ -24,8 +24,50 @@
    font-family: 'Shadows Into Light', cursive;
     color: white;
     font-size: 65px;
-    margin: 300px 266px 200px 320px;
+    margin: 300px 266px 0px 350px;
     padding-bottom: 150px;
     padding-top: 50px;
  }
+  
+ .header {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  color: black;
+  background: antiquewhite;
+  }
+  
+ 
+.card-container {
+  height: 250px;
+  perspective: 600;
+  position: relative;
+  width: 350px;
+  
+}
+.card_one {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+}
+.card .back {
+  transform: rotateY(180deg);
+   background: teal;
+   color: white;
+   font-size: 19px;
+  font-family: 'Architects Daughter', cursive;
+}
  
