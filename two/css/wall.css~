@@ -1,0 +1,52 @@
+#container-fluid {
+  background: url("../images/wall.jpg");
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  
+}
+
+.mine {
+	padding-left: 600px;
+	text-align: center;
+  color: beige;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 700;
+  font-size: 44px;
+}
+
+#sign {
+	position: relative;
+	left: 470px;
+	margin-top: 20px;
+	float: left;
+    margin: 4em 1em;
+    width: 100px;
+    height: 60px;
+    border: 2px solid green;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .showbox.slideright:hover {
+    -webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+    -o-transform: translate(3em,0);
+    -ms-transform: translate(3em,0);
+    transform: translate(3em,0);
+  }
+}
