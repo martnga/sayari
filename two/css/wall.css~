@@ -1,6 +1,8 @@
 #container-fluid {
-  background: url("../images/wall.jpg");
+  background: url("http://images.thesartorialist.com/thumbnails/2015/06/62115Duomo3A1548.jpg");
   /* Set rules to fill background */
+  background-size: cover;
+  
   min-height: 100%;
   min-width: 1024px;
 	
@@ -27,26 +29,98 @@
 
 #sign {
 	position: relative;
-	left: 470px;
+	left: 970px;
 	margin-top: 20px;
-	float: left;
-    margin: 4em 1em;
-    width: 100px;
-    height: 60px;
-    border: 2px solid green;
-    background-color: #fff;
-    line-height: 60px;
-    text-align: center;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-  }
-  .showbox.slideright:hover {
-    -webkit-transform: translate(3em,0);
-    -moz-transform: translate(3em,0);
-    -o-transform: translate(3em,0);
-    -ms-transform: translate(3em,0);
-    transform: translate(3em,0);
-  }
+	
+    
+}
+
+
+.jm-item {
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}
+.jm-item-wrapper {
+	position: relative;
+	padding: 7px;
+	background: #E8D7B6;
+}
+
+.jm-item-image {
+	position: relative;
+    overflow: hidden;
+}
+.jm-item-image img {
+	display: block;
+}
+
+.jm-item-title {
+    position: absolute;
+    left: -10px;
+    bottom: 17px;
+    background: #FF6B0E;
+    line-height: 1.5em;
+    font-weight: normal;
+    padding: 7px 9px 6px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+
+.jm-item-overlay {
+	background: #000;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity 0.5s ease-in 0s;
+	-moz-transition: opacity 0.5s ease-in 0s;
+	-o-transition: opacity 0.5s ease-in 0s;
+	transition: opacity 0.5s ease-in 0s;
+}
+.jm-item-wrapper:hover .jm-item-overlay {
+	opacity: 0.3;
+}
+
+.jm-item-button {
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+}
+.jm-item-button a {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FF6B0E;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 50px;
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    text-decoration: none !important;
+    display: block;
+}
+.jm-item-button a:hover {
+	background: #3b3b3b;	
+}
+
+first .jm-item-button {
+	-webkit-transition: all 0.5s ease-in 0.5s;
+	-moz-transition: all 0.5s ease-in 0.5s;
+	-o-transition: all 0.5s ease-in 0.5s;
+	transition: all 0.5s ease-in 0.5s;
+	top: -50px;	
+}
+.first .jm-item-wrapper:hover .jm-item-button {
+	top: 20%;	
 }
