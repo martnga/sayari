@@ -38,6 +38,11 @@
   background: antiquewhite;
   }
   
+  #one, #two, #three {
+  	   display:flex;
+      justify-content:space-around;
+                 
+  }
  
 .card-container {
   height: 250px;
