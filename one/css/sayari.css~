@@ -38,12 +38,20 @@
   background: antiquewhite;
   }
   
+  #one, #two, #three {
+  	   display:flex;
+      justify-content:space-around;
+                 [0]
+  }
  
 .card-container {
   height: 250px;
   perspective: 600;
   position: relative;
   width: 350px;
+  border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
   
 }
 .card {
@@ -52,6 +60,7 @@
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
   width: 100%;
+  
 }
 .card:hover {
   transform: rotateY(180deg);
@@ -70,4 +79,15 @@
    font-size: 19px;
   font-family: 'Architects Daughter', cursive;
 }
- 
+ #foot {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+    color: white;
+    background: black;
+    font-size: 19px;
+    padding: 20px 0px;
+ }
+ #content {
+  padding: 20px 20px;
+  
+ }
